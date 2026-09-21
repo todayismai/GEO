@@ -18,15 +18,23 @@ struct ContentView: View {
     @State private var searchText: String = ""
     @State private var viewMode: ViewMode = .list
     
-    // Dữ liệu mẫu ban đầu (Sample Data)[cite: 8]
+    // Tọa độ mặc định (HCMIU)
+    @State private var cameraPosition: MapCameraPosition = .region(
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 10.87788, longitude: 106.80157),
+            span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+        )
+    )
+    
+    
     @State private var locations: [Location] = [
-        Location(name: "HCMIU", latitude: 10.8506, longitude: 106.7719),
+        Location(name: "HCMIU", latitude: 10.87788, longitude: 106.80157),
         Location(name: "Home", latitude: 10.9500, longitude: 106.8200),
         Location(name: "Coffee Shop", latitude: 10.8752, longitude: 106.8012),
         Location(name: "Park", latitude: 10.8601, longitude: 106.7930)
     ]
     
-    // Lọc danh sách địa điểm theo từ khóa Search Bar
+    // Lọc danh sách địa điểm theo từ khóa
     var filteredLocations: [Location] {
         if searchText.isEmpty {
             return locations
@@ -41,7 +49,7 @@ struct ContentView: View {
         NavigationStack {
             VStack(spacing: 12) {
                 
-                // 1. Title & Header
+                // 1. Header
                 VStack(spacing: 4) {
                     Image(systemName: "mappin.circle.fill")
                         .font(.system(size: 36))
@@ -57,7 +65,7 @@ struct ContentView: View {
                 }
                 .padding(.top, 8)
                 
-                // 2. Search Bar gợi ý kết quả
+                // 2. Search Bar
                 HStack {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
@@ -74,7 +82,7 @@ struct ContentView: View {
                 .cornerRadius(10)
                 .padding(.horizontal)
                 
-                // 3. Nội dung hiển thị: Chế độ List hoặc Chế độ Map
+                // 3. Nội dung hiển thị (List / Map)
                 if viewMode == .list {
                     // Hiển thị dạng List
                     List {
@@ -94,12 +102,27 @@ struct ContentView: View {
                                     .font(.caption)
                                     .foregroundColor(.gray)
                             }
+                            .contentShape(Rectangle()) // Giúp bấm vào toàn bộ hàng
+                            .onTapGesture {
+                                // Xử lý khi bấm vào địa điểm:
+                                // 1. Cập nhật vị trí camera bản đồ tới địa điểm đó
+                                withAnimation {
+                                    cameraPosition = .region(
+                                        MKCoordinateRegion(
+                                            center: loc.coordinate,
+                                            span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+                                        )
+                                    )
+                                    // 2. Tự động chuyển sang tab Bản đồ
+                                    viewMode = .map
+                                }
+                            }
                         }
                     }
                     .listStyle(.plain)
                 } else {
-                    // Hiển thị dạng Map View với các ghim vị trí
-                    Map {
+                    // Hiển thị dạng Map View
+                    Map(position: $cameraPosition) {
                         ForEach(filteredLocations) { loc in
                             Annotation(loc.name, coordinate: loc.coordinate) {
                                 VStack(spacing: 2) {
@@ -120,7 +143,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                 }
                 
-                // 4. Chuyển đổi giữa List View và Map View (Picker)[cite: 8]
+                // 4. Picker chuyển đổi List/Map[cite: 8]
                 Picker("View Mode", selection: $viewMode) {
                     Text("List").tag(ViewMode.list)
                     Text("Map").tag(ViewMode.map)
@@ -128,7 +151,7 @@ struct ContentView: View {
                 .pickerStyle(.segmented)
                 .padding(.horizontal)
                 
-                // 5. Add Place Button (Mở AddPlaceView)
+                // 5. Nút Add Place
                 NavigationLink(destination: AddPlaceView(onSave: { newLocation in
                     locations.append(newLocation)
                 })) {
@@ -145,38 +168,38 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
                 
-                // 6. Total places count
+                // 6. Tổng số địa điểm
                 Text("Total places: \(locations.count)")
                     .font(.caption)
                     .foregroundColor(.gray)
                     .padding(.bottom, 6)
             }
         }
-        .preferredColorScheme(.light) // Cố định giao diện sáng (nền trắng)
+        .preferredColorScheme(.light)
     }
     
-    // Icon tùy chỉnh theo loại địa điểm (Đã sửa lại SF Symbols chuẩn)
-        @ViewBuilder
-        func placeIcon(for name: String) -> some View {
-            let lowerName = name.lowercased()
-            
-            if lowerName.contains("hcmiu") {
-                Image(systemName: "graduationcap.fill") // Sửa thành graduationcap.fill
-                    .foregroundColor(.blue)
-            } else if lowerName.contains("home") {
-                Image(systemName: "house.fill")
-                    .foregroundColor(.orange)
-            } else if lowerName.contains("coffee") {
-                Image(systemName: "cup.and.saucer.fill")
-                    .foregroundColor(.brown)
-            } else if lowerName.contains("park") {
-                Image(systemName: "tree.fill")
-                    .foregroundColor(.green)
-            } else {
-                Image(systemName: "mappin.circle.fill")
-                    .foregroundColor(.red)
-            }
+    // Icon tùy chỉnh theo loại địa điểm
+    @ViewBuilder
+    func placeIcon(for name: String) -> some View {
+        let lowerName = name.lowercased()
+        
+        if lowerName.contains("hcmiu") {
+            Image(systemName: "graduationcap.fill")
+                .foregroundColor(.blue)
+        } else if lowerName.contains("home") {
+            Image(systemName: "house.fill")
+                .foregroundColor(.orange)
+        } else if lowerName.contains("coffee") {
+            Image(systemName: "cup.and.saucer.fill")
+                .foregroundColor(.brown)
+        } else if lowerName.contains("park") {
+            Image(systemName: "tree.fill")
+                .foregroundColor(.green)
+        } else {
+            Image(systemName: "mappin.circle.fill")
+                .foregroundColor(.red)
         }
+    }
 }
 
 #Preview {

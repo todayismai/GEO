@@ -25,11 +25,11 @@ class Location: Identifiable {
         self.name = name
         self.latitude = latitude
         self.longitude = longitude
-        print("📍 Location initialized: \(name)")
+        print("Location initialized: \(name)")
     }
     
     // Deinitializer
     deinit {
-        print("🗑️ Location deinitialized: \(name)")
+        print("Location deinitialized: \(name)")
     }
 }
