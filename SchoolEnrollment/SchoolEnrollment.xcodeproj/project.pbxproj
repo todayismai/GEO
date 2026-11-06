@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5CACA5955A5E6CFC223889C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC6C648890C94B1536B62B; };
+		AFA8BBA757F7F012C709C39A /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04829CC23EFC409B924AC43A; };
+		2C06F346BDC44FF9FAB2626D /* Enrollment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD148925617C0CB3CF35300; };
+		42E4625A636988F306D41E0E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C7F81519F20B0396DB6B4; };
+		795E3F1C71A5516EC70DF049 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DE27F001852CD4F72E82E5; };
+		1974CE0B583F264AA31D3753 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A2CA09BE87D29BDF41EC6; };
+		79030130E881ACFEC2FE5D0A /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAF956334114EAA6C056F02; };
+		D76116C21D535AF58685EFE2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEAB16081DD1D7B59E8AE31; };
+		9AA6A22926F534813B811068 /* AssignSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C168DD43D4FE936765C1C13; };
+		816689815ED0F5C05F3A89D2 /* EnrollmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38A155B0B34F825A2B37C4; };
+		B045A0E52FF8DFB2D131EBE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E4D073B9F7C52A05BE17EC; };
+		DAEDACCD769880E6A3BA43A6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD54880DDA7F5A0B1FA50B; };
+		60CA54A02A913CF26C9B0430 /* MarkEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCCDF2ADB1CDA420DF6F2A2; };
+		E041AA4A5195F666BED9D325 /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9616BEBC55117F00AB46C; };
+		C8B3B320BFCA223470444855 /* StudentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71387EB1712BE78B6FE7761; };
+		3B4D9BA0F4F1F83AC09F9DA4 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFF58948870D01EA88EC34B; };
+		E138DA924D508727C1954BB2 /* SubjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71343E25073DAF58B20D90A7; };
+		9659C54F10525A1A11A88864 /* TeacherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E8F8E1059C1E56E0E0C59; };
+		C540BF4CF3EEB2DB59CF72FD /* TeacherFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC93880301582BE9C7A8C87; };
+		A2FAEB87BC7C1E43EBE5EE12 /* TeacherListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17815506A9DE630FAA547304; };
+		11E5F44BEA947B6BE0136DB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D96863E1AFE98A38188210A; };
+		3BC68630E95896CE6EC167D0 /* SchoolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6193A1DC63FF4399B1745D3; };
+		14B12E06E497B1A2768DB773 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0BE2BF184D4675F0FDA55; };
+		46BCC86F93E938E0F8C0954A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BE5EF82D421AE05B6FAA1; };
+		3C747AEFE7C0767D07F383A5 /* SchoolEnrollmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA01A83AA8DADD1CE4A3E28; };
+		066648562FCD0413961B2894 /* BusinessRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F5BF437CDCC5A3B0ADAB; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		431387EB7262E1CFC79B125E /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = 4DC844ABCCFC0D132D087C1C /* Project object */; proxyType = 1; remoteGlobalIDString = 778130C49534A4D32801D13D; remoteInfo = SchoolEnrollment; };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04829CC23EFC409B924AC43A /* Describable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
+		8BD148925617C0CB3CF35300 /* Enrollment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enrollment.swift; sourceTree = "<group>"; };
+		A75C7F81519F20B0396DB6B4 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		71DE27F001852CD4F72E82E5 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		8A3A2CA09BE87D29BDF41EC6 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		DAAF956334114EAA6C056F02 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		CEEAB16081DD1D7B59E8AE31 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		5C168DD43D4FE936765C1C13 /* AssignSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignSubjectView.swift; sourceTree = "<group>"; };
+		DE38A155B0B34F825A2B37C4 /* EnrollmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentView.swift; sourceTree = "<group>"; };
+		58E4D073B9F7C52A05BE17EC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F5AD54880DDA7F5A0B1FA50B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9CCCDF2ADB1CDA420DF6F2A2 /* MarkEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkEntryView.swift; sourceTree = "<group>"; };
+		87B9616BEBC55117F00AB46C /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
+		A71387EB1712BE78B6FE7761 /* StudentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFormView.swift; sourceTree = "<group>"; };
+		AFFF58948870D01EA88EC34B /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		71343E25073DAF58B20D90A7 /* SubjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectListView.swift; sourceTree = "<group>"; };
+		CE8E8F8E1059C1E56E0E0C59 /* TeacherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDetailView.swift; sourceTree = "<group>"; };
+		8DC93880301582BE9C7A8C87 /* TeacherFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherFormView.swift; sourceTree = "<group>"; };
+		17815506A9DE630FAA547304 /* TeacherListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListView.swift; sourceTree = "<group>"; };
+		6D96863E1AFE98A38188210A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C6193A1DC63FF4399B1745D3 /* SchoolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolManager.swift; sourceTree = "<group>"; };
+		58E0BE2BF184D4675F0FDA55 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		C69BE5EF82D421AE05B6FAA1 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		FDA01A83AA8DADD1CE4A3E28 /* SchoolEnrollmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEnrollmentApp.swift; sourceTree = "<group>"; };
+		4EAC6C648890C94B1536B62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3B6F5BF437CDCC5A3B0ADAB /* BusinessRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRulesTests.swift; sourceTree = "<group>"; };
+		C093938BBDECC9A0348C2B9C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE9CFA4A4EFC4B631F19B9D1 /* SchoolEnrollment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolEnrollment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F921613D876E1AE6A33269C7 /* SchoolEnrollmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolEnrollmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A82E6F678DA6193022955957 /* PBXFrameworksBuildPhase */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+			); runOnlyForDeploymentPostprocessing = 0; };
+		43D8C4E6C730A0006141DA00 /* PBXFrameworksBuildPhase */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+			); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDA0940AFB400B2D73EDE989 /* Models */ = {isa = PBXGroup; children = (
+				04829CC23EFC409B924AC43A /* Describable.swift */,
+				8BD148925617C0CB3CF35300 /* Enrollment.swift */,
+				A75C7F81519F20B0396DB6B4 /* Student.swift */,
+				71DE27F001852CD4F72E82E5 /* Subject.swift */,
+				8A3A2CA09BE87D29BDF41EC6 /* Teacher.swift */,
+				DAAF956334114EAA6C056F02 /* ValidationError.swift */,
+				CEEAB16081DD1D7B59E8AE31 /* Validator.swift */,
+			); path = Models; sourceTree = "<group>"; };
+		91B42EC8C07BA594F68CC4BF /* Views */ = {isa = PBXGroup; children = (
+				5C168DD43D4FE936765C1C13 /* AssignSubjectView.swift */,
+				DE38A155B0B34F825A2B37C4 /* EnrollmentView.swift */,
+				58E4D073B9F7C52A05BE17EC /* HomeView.swift */,
+				F5AD54880DDA7F5A0B1FA50B /* LoginView.swift */,
+				9CCCDF2ADB1CDA420DF6F2A2 /* MarkEntryView.swift */,
+				87B9616BEBC55117F00AB46C /* StudentDetailView.swift */,
+				A71387EB1712BE78B6FE7761 /* StudentFormView.swift */,
+				AFFF58948870D01EA88EC34B /* StudentListView.swift */,
+				71343E25073DAF58B20D90A7 /* SubjectListView.swift */,
+				CE8E8F8E1059C1E56E0E0C59 /* TeacherDetailView.swift */,
+				8DC93880301582BE9C7A8C87 /* TeacherFormView.swift */,
+				17815506A9DE630FAA547304 /* TeacherListView.swift */,
+			); path = Views; sourceTree = "<group>"; };
+		356CD26186F71FDDA8D2AB4D /* Services */ = {isa = PBXGroup; children = (
+				6D96863E1AFE98A38188210A /* AuthService.swift */,
+				C6193A1DC63FF4399B1745D3 /* SchoolManager.swift */,
+				58E0BE2BF184D4675F0FDA55 /* UserAccount.swift */,
+			); path = Services; sourceTree = "<group>"; };
+		78B17EEEF186FDE7D7524A3A /* Support */ = {isa = PBXGroup; children = (
+				C69BE5EF82D421AE05B6FAA1 /* Toast.swift */,
+			); path = Support; sourceTree = "<group>"; };
+		28A0636017AEEB61BCDA9D56 /* SchoolEnrollment */ = {isa = PBXGroup; children = (
+				FDA01A83AA8DADD1CE4A3E28 /* SchoolEnrollmentApp.swift */,
+				BDA0940AFB400B2D73EDE989 /* Models */,
+				91B42EC8C07BA594F68CC4BF /* Views */,
+				356CD26186F71FDDA8D2AB4D /* Services */,
+				78B17EEEF186FDE7D7524A3A /* Support */,
+				4EAC6C648890C94B1536B62B /* Assets.xcassets */,
+			); path = SchoolEnrollment; sourceTree = "<group>"; };
+		3B9716D01E3885F1E9A79001 /* SchoolEnrollmentTests */ = {isa = PBXGroup; children = (
+				F3B6F5BF437CDCC5A3B0ADAB /* BusinessRulesTests.swift */,
+			); path = SchoolEnrollmentTests; sourceTree = "<group>"; };
+		1DEFA2DBDC9661815A95F2D4 /* Products */ = {isa = PBXGroup; children = (
+				AE9CFA4A4EFC4B631F19B9D1 /* SchoolEnrollment.app */,
+				F921613D876E1AE6A33269C7 /* SchoolEnrollmentTests.xctest */,
+			); name = Products; sourceTree = "<group>"; };
+		4C217B7E49CE4218A745107D = {isa = PBXGroup; children = (
+				C093938BBDECC9A0348C2B9C /* README.md */,
+				28A0636017AEEB61BCDA9D56 /* SchoolEnrollment */,
+				3B9716D01E3885F1E9A79001 /* SchoolEnrollmentTests */,
+				1DEFA2DBDC9661815A95F2D4 /* Products */,
+			); sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		778130C49534A4D32801D13D /* SchoolEnrollment */ = {isa = PBXNativeTarget; buildConfigurationList = AC573CC2B6EF8ABF3A944EA0; buildPhases = (F6BE306E6A9E42DE559F6EDC,A82E6F678DA6193022955957,7414EC6B391964FAEC8B0E90,); buildRules = (); dependencies = (); name = SchoolEnrollment; productName = SchoolEnrollment; productReference = AE9CFA4A4EFC4B631F19B9D1; productType = "com.apple.product-type.application"; };
+		27C2F5CD118605258B779913 /* SchoolEnrollmentTests */ = {isa = PBXNativeTarget; buildConfigurationList = 6D3563AFDFE7869597E19302; buildPhases = (A94C761CA696158F3B24FEA8,43D8C4E6C730A0006141DA00,9E0CFC9615215E7CF6DDD3DF,); buildRules = (); dependencies = (2254342BECCEAFBD04538E0A,); name = SchoolEnrollmentTests; productName = SchoolEnrollmentTests; productReference = F921613D876E1AE6A33269C7; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC844ABCCFC0D132D087C1C /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = {778130C49534A4D32801D13D = {CreatedOnToolsVersion = 15.0; }; 27C2F5CD118605258B779913 = {CreatedOnToolsVersion = 15.0; TestTargetID = 778130C49534A4D32801D13D; }; }; }; buildConfigurationList = A7492CCDE30BE8F54F16B52E; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en,Base,); mainGroup = 4C217B7E49CE4218A745107D; productRefGroup = 1DEFA2DBDC9661815A95F2D4; projectDirPath = ""; projectRoot = ""; targets = (778130C49534A4D32801D13D,27C2F5CD118605258B779913,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7414EC6B391964FAEC8B0E90 /* PBXResourcesBuildPhase */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+				C5CACA5955A5E6CFC223889C /* Assets.xcassets in Resources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+		9E0CFC9615215E7CF6DDD3DF /* PBXResourcesBuildPhase */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+			); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6BE306E6A9E42DE559F6EDC /* PBXSourcesBuildPhase */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				AFA8BBA757F7F012C709C39A /* Describable.swift in Sources */,
+				2C06F346BDC44FF9FAB2626D /* Enrollment.swift in Sources */,
+				42E4625A636988F306D41E0E /* Student.swift in Sources */,
+				795E3F1C71A5516EC70DF049 /* Subject.swift in Sources */,
+				1974CE0B583F264AA31D3753 /* Teacher.swift in Sources */,
+				79030130E881ACFEC2FE5D0A /* ValidationError.swift in Sources */,
+				D76116C21D535AF58685EFE2 /* Validator.swift in Sources */,
+				9AA6A22926F534813B811068 /* AssignSubjectView.swift in Sources */,
+				816689815ED0F5C05F3A89D2 /* EnrollmentView.swift in Sources */,
+				B045A0E52FF8DFB2D131EBE3 /* HomeView.swift in Sources */,
+				DAEDACCD769880E6A3BA43A6 /* LoginView.swift in Sources */,
+				60CA54A02A913CF26C9B0430 /* MarkEntryView.swift in Sources */,
+				E041AA4A5195F666BED9D325 /* StudentDetailView.swift in Sources */,
+				C8B3B320BFCA223470444855 /* StudentFormView.swift in Sources */,
+				3B4D9BA0F4F1F83AC09F9DA4 /* StudentListView.swift in Sources */,
+				E138DA924D508727C1954BB2 /* SubjectListView.swift in Sources */,
+				9659C54F10525A1A11A88864 /* TeacherDetailView.swift in Sources */,
+				C540BF4CF3EEB2DB59CF72FD /* TeacherFormView.swift in Sources */,
+				A2FAEB87BC7C1E43EBE5EE12 /* TeacherListView.swift in Sources */,
+				11E5F44BEA947B6BE0136DB9 /* AuthService.swift in Sources */,
+				3BC68630E95896CE6EC167D0 /* SchoolManager.swift in Sources */,
+				14B12E06E497B1A2768DB773 /* UserAccount.swift in Sources */,
+				46BCC86F93E938E0F8C0954A /* Toast.swift in Sources */,
+				3C747AEFE7C0767D07F383A5 /* SchoolEnrollmentApp.swift in Sources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+		A94C761CA696158F3B24FEA8 /* PBXSourcesBuildPhase */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				066648562FCD0413961B2894 /* BusinessRulesTests.swift in Sources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2254342BECCEAFBD04538E0A /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 778130C49534A4D32801D13D /* SchoolEnrollment */; targetProxy = 431387EB7262E1CFC79B125E /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B69466B536F8CE43B6356EC1 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1","$(inherited)");
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			}; name = Debug; };
+		64E1E1CBE1CA8E88EF3A838A /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			}; name = Release; };
+		523AF537946B79C4F8369ED3 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "School Enrollment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SchoolEnrollment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			}; name = Debug; };
+		C582DEC943FF7B743AA0691D /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "School Enrollment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SchoolEnrollment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			}; name = Release; };
+		626726E60BD1215F36719A30 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks","@loader_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SchoolEnrollmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolEnrollment.app/SchoolEnrollment";
+			}; name = Debug; };
+		E7D707A26E7F7B6FF52C489C /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)","@executable_path/Frameworks","@loader_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SchoolEnrollmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolEnrollment.app/SchoolEnrollment";
+			}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7492CCDE30BE8F54F16B52E /* Build configuration list for PBXProject "SchoolEnrollment" */ = {isa = XCConfigurationList; buildConfigurations = (B69466B536F8CE43B6356EC1,64E1E1CBE1CA8E88EF3A838A,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AC573CC2B6EF8ABF3A944EA0 /* Build configuration list for PBXNativeTarget "SchoolEnrollment" */ = {isa = XCConfigurationList; buildConfigurations = (523AF537946B79C4F8369ED3,C582DEC943FF7B743AA0691D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		6D3563AFDFE7869597E19302 /* Build configuration list for PBXNativeTarget "SchoolEnrollmentTests" */ = {isa = XCConfigurationList; buildConfigurations = (626726E60BD1215F36719A30,E7D707A26E7F7B6FF52C489C,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC844ABCCFC0D132D087C1C /* Project object */;
+}
